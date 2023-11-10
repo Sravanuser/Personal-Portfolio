@@ -9,10 +9,6 @@ export default function Home(){
         hidden: { opacity: 0},
         visible: { opacity: 1,transition: { duration: .5 } },
     };
-    const contactVariants = {
-        hidden: { opacity: 0 },
-        visible: { opacity: 1, transition: { duration: .9} },
-    };
     return(
         <motion.div  variants={aboutVariants} initial="hidden" animate="visible" className="home">
         <div className="a">
