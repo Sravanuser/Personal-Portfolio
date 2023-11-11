@@ -39,16 +39,15 @@ body{
 span{
   color: #00ff00;
 }
-.home .a button{
+.button{
   width:100px;
   height:30px;
   position: relative;
   background-color: transparent;
   border:2px solid #00ff00;
-  font-size:15px;
-
+  font-size:10px;
 }
-.home .a button::after{
+.button::after{
   content: "";
   height: 100%;
   position:absolute;
@@ -58,7 +57,7 @@ span{
   z-index:-1;
   transition:all .2s cubic-bezier(0.1, 1.3, 0.68, 1);
 }
-.home .a button:hover::after{
+.button:hover::after{
   width: 100%;
   background-color:#00ff00;
 }
@@ -157,6 +156,34 @@ span{
   width: 100%;
   height: 80%;
 }
+.projects{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  margin-top: 70px;
+  justify-content: center;
+}
+.project1{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.project2{
+    width: 280px;
+    height: 400px;
+    box-shadow: rgba(60,64,67,0.3) 0px 1px 2px 0px, rgba(60,64,67,0.15) 0px 1px 3px 1px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+.project2 img{
+    width: 90%;
+    height: 220px;
+}
+.project2 .para{
+  padding:0px 20px;
+  line-height: 22px;
+}
 @media screen and (min-width:976px)
 {
   .home
@@ -192,7 +219,7 @@ span{
     width:50%;
     object-fit: cover;
   }
-    .about .about1 .image img{
+  .about .about1 .image img{
     width: 100%;
     height: 100%;
   }
@@ -209,6 +236,12 @@ span{
     width: 180px;
     height: 180px;
   }
+  .project1{
+    width: 90%;
+  }
+  .project1{
+    justify-content: flex-start;
+  }  
 }
 @media screen and (width<975px) and (width>472px){
   .home{
