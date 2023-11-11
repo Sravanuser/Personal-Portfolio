@@ -14,7 +14,7 @@ export default function Home(){
         <div className="a">
         <h1>Hi There, <br/> I'm <span>Sravan Kumar</span></h1>
         <p>Incididunt ad dolore ex labore excepteur voluptate irure laboris amet id minim non aute excepteur. Aute voluptate sunt ad fugiat. Nisi et nisi ea ad nulla exercitation ea elit. Sit ullamco sint dolor aliqua aute laborum laborum ea ad irure.</p>
-        <button className="button" onClick={()=>navigate('about')}>About me </button>
+        <button className="button button1" onClick={()=>navigate('about')}>About me </button>
         </div>
         <div className="b">
         <img src={image} alt="image"/>
